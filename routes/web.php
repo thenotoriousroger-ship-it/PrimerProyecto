@@ -19,6 +19,6 @@ Route::get('/mensaje/{id}',function($id){
 })->where('id','[0-9]+');
 
 Route::get('/contact',function(){
-    $nombre="Alejandro Góngora Escalante";
-    return view('contact',['nombre'=>$nombre,'carrera'=>'Doctor en Sistemas Computacionales']);
+    $nombre="Emmanuel Soto Sosa";
+    return view('contact',['nombre'=>$nombre,'carrera'=>'Licenciado en Administración de Tecnologías de la Información']);
 })->name('contact');
