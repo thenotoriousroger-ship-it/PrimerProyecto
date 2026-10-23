@@ -22,3 +22,15 @@ Route::get('/contact',function(){
     $nombre="Emmanuel Soto Sosa";
     return view('contact',['nombre'=>$nombre,'carrera'=>'Licenciado en Administración de Tecnologías de la Información']);
 })->name('contact');
+
+Route::get('/empresa',function(){
+    $titulo="Tienda Virtual - Vista Principal";
+    $mensaje="Bienvenido a la vista principal";
+    $autor="Emmanuel Soto Sosa";
+    $descripcion_about="hola";
+    $nombre="Emmanuel Soto Sosa";
+    $texto_ejemplo="Este es un ejemplo de texto para la vista de la empresa.";
+    $actividad="venta de productos y servicios en línea";
+    $listadousuarios=Pagina::all();
+    return view('empresa',compact('titulo','mensaje','autor','descripcion_about','nombre','texto_ejemplo','actividad','listadousuarios'));
+})->name('empresa');
